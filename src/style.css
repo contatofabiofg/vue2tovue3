@@ -28,36 +28,22 @@ textarea {
   outline-0
 }
   
-label{
-  @apply
-  my-5
-}
 
-
-h1 {
-  @apply
-  text-lg
-  font-bold
-}
-
-h2 {
-  @apply
-  text-base
-  font-bold
+label {
+@apply
+font-black
 }
 
 button {
   @apply
-  p-1
-  w-full
-  max-w-[300px]
-  px-3
+  p-2 
   rounded
-  m-3
+  mx-3
   bg-emerald-700
   text-white
   duration-100
   hover:bg-emerald-600
+  my-auto
 
 }
 

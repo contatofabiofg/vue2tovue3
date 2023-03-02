@@ -2,6 +2,8 @@
   "extends": "@vue/tsconfig/tsconfig.web.json", //pré-configurações da biblioteca
   "include": ["env.d.ts", "src/**/*", "src/**/*.vue"], //pastas e arquivos que o ts vai ler
   "compilerOptions": {
+    "outDir": "./built", //pesquisar sobre
+    "allowJs": true,
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
@@ -15,5 +17,11 @@
     {
       "path": "./tsconfig.config.json"
     }
-  ]
+  ],
+  "exclude": [
+    "./plugins/**/*",
+    "./typings/**/*",
+    "./built/**/*" // This is what fixed it!
+]
+  
 }
